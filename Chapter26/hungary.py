@@ -2,7 +2,7 @@
 
 # hungary algorithm using bfs method
 def hungary_bfs(m,n,mat):
-	s = [-1]*m
+	s = [-1]*(m+1)
 	match1 = [-1]*n
 	match2 = [-1]*m
 	ret = 0
@@ -62,7 +62,7 @@ def hungary_dfs_rec(m,n,mat):
 
 # hungary algorithm using dfs unrecursive method
 def hungary_dfs_unrec(m,n,mat):
-	stack = [0]*m
+	stack = [0]*(m+2)
 	ind = [-1]*m
 	
 	match1 = [-1]*m
